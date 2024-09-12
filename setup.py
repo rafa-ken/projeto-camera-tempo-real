@@ -22,7 +22,7 @@ setup(
     python_requires='>=3.11',
     entry_points={
         'console_scripts': [
-            'camera=camera-tempo-real.main:main',
+            'projeto-camera-tempo-real=projeto-camera-tempo-real.main:main',
         ],
     },
     install_requires=[
