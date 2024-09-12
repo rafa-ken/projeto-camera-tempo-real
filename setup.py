@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="camera-tempo-real",  # Substitua pelo nome do seu pacote
+    name="projeto-camera-tempo-real",  # Substitua pelo nome do seu pacote
     version="0.1.0",
     author="Rafae Ken Reis Miyamoto, Vinicius Leal Silva",
     author_email="rafaelkrm@al.insper.edu.br, viniciusls2@al.insper.edu.br",
