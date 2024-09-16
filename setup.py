@@ -5,14 +5,14 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="projeto-camera-tempo-real",  # Substitua pelo nome do seu pacote
+    name="projeto_camera_tempo_real",  # Substitua pelo nome do seu pacote
     version="0.1.0",
     author="Rafae Ken Reis Miyamoto, Vinicius Leal Silva",
     author_email="rafaelkrm@al.insper.edu.br, viniciusls2@al.insper.edu.br",
     description="Pacote para capturar imagens da câmera em tempo real",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/rafa-ken/projeto-camera-tempo-real",
+    url="https://github.com/rafa-ken/projeto_camera_tempo_real",
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -22,7 +22,7 @@ setup(
     python_requires='>=3.11',
     entry_points={
         'console_scripts': [
-            'camera=camera.main:main',
+            'projeto_camera_tempo_real=projeto_camera_tempo_real.main:main',
         ],
     },
     install_requires=[
