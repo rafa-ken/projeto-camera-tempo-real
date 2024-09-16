@@ -13,7 +13,7 @@ def rotate_image(image, angle):
 
 def run():
     cap = cv.VideoCapture(0)
-
+    angle_speed = 1
     width = 320
     height = 240
 
@@ -39,10 +39,14 @@ def run():
 
         cv.imshow('Imagem Rotacionada!', rotated_image)
 
-        angle += 1
+        angle += 1 * angle_speed
 
         if cv.waitKey(1) == ord('q'):
             break
+        if cv.waitKey(1) == ord('w'):
+            angle_speed -= 0.1
+        if cv.waitKey(1) == ord('s'):
+            angle_speed += 0.1
 
     cap.release()
     cv.destroyAllWindows()
